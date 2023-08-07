@@ -23,8 +23,8 @@ function adicionaLinha() {
         alert(`ERRO! Já existe um contato com este nome.`);
     } else if ((numeros.includes(inputNumeroContato.value))) {
         alert(`ERRO! Já existe um contato com este número.`);
-    } else if (length(inputNumeroContato.value)<11) {
-        alert(`ERRO! Este NÃO é um número válido.`);    
+    } else if (inputNumeroContato.value.length < 11) {
+        alert(`ERRO! Este NÃO é um número válido.`);
     } else {
 
         contatos.push(inputNomeContato.value);
